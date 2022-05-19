@@ -19,26 +19,31 @@ public interface JpaConst {
     String EMP_COL_CODE = "code"; //社員番号
     String EMP_COL_NAME = "name"; //氏名
     String EMP_COL_PASS = "password"; //パスワード
-    String EMP_COL_ADMIN_FLAG = "admin_flag"; //管理者権限
     String EMP_COL_CREATED_AT = "created_at"; //登録日時
     String EMP_COL_UPDATED_AT = "updated_at"; //更新日時
     String EMP_COL_DELETE_FLAG = "delete_flag"; //削除フラグ
 
-    int ROLE_ADMIN = 1; //管理者権限ON(管理者)
-    int ROLE_GENERAL = 0; //管理者権限OFF(一般)
     int EMP_DEL_TRUE = 1; //削除フラグON(削除済み)
     int EMP_DEL_FALSE = 0; //削除フラグOFF(現役)
 
-    //日報テーブル
-    String TABLE_REP = "reports"; //テーブル名
-    //日報テーブルカラム
-    String REP_COL_ID = "id"; //id
-    String REP_COL_EMP = "employee_id"; //日報を作成した従業員のid
-    String REP_COL_REP_DATE = "report_date"; //いつの日報かを示す日付
-    String REP_COL_TITLE = "title"; //日報のタイトル
-    String REP_COL_CONTENT = "content"; //日報の内容
-    String REP_COL_CREATED_AT = "created_at"; //登録日時
-    String REP_COL_UPDATED_AT = "updated_at"; //更新日時
+    //プロフィールテーブル
+    String TABLE_REP = "profiles"; //テーブル名
+    //プロフィールテーブルカラム
+    String PROF_COL_ID = "id"; //id
+    String PROF_COL_EMP = "employee_id"; //プロフィールを作成者のid
+    String PROF_COL_AGE = "age"; //年齢
+    String PROF_COL_YEAR = "year"; //社内年数
+    String PROF_COL_BIRTHPLACE = "birthplace"; //出身地
+    String PROF_COL_HOBBY = "hobby"; //趣味
+    String PROF_COL_LIKE = "like"; //好きなモノ
+    String PROF_COL_SPOT = "spot"; //おすすめスポット
+    String PROF_COL_ROLE = "role"; //所属、役割
+    String PROF_COL_GENRE = "genre"; //得意なジャンル
+    String PROF_COL_PROJECT = "project"; //関わったPJ
+    String PROF_COL_QUAL = "qual"; //主な資格
+    String PROF_COL_COMMENT = "comment"; //新人にやってほしいこと
+    String PROF_COL_CREATED_AT = "created_at"; //登録日時
+    String PROF_COL_UPDATED_AT = "updated_at"; //更新日時
 
     //Entity名
     String ENTITY_EMP = "employee"; //従業員
